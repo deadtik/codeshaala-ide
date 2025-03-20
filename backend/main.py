@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import os
 from compilers.cpp_runner import run_cpp
 from compilers.java_runner import run_java
-from compilers.js_runner import run_js
+from compilers.js_runner import run_javascript
 from compilers.python_runner import run_python
 
 app = Flask(__name__)
@@ -11,7 +11,7 @@ app = Flask(__name__)
 language_runners = {
     "cpp": run_cpp,
     "java": run_java,
-    "javascript": run_js,
+    "javascript": run_javascript,
     "python": run_python
 }
 
