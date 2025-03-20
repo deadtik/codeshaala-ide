@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
+
         try {
             outputBox.innerText = "⏳ Running..."; // Show loading message
 
